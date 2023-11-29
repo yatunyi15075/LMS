@@ -1,7 +1,7 @@
 "use client";
 
 import { UserButton, useAuth } from "@clerk/nextjs";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { LogOut } from "lucide-react";
 import Link from "next/link";
 
