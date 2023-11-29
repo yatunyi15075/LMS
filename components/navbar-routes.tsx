@@ -1,7 +1,7 @@
 "use client";
 
 import { UserButton, useAuth } from "@clerk/nextjs";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { LogOut } from "lucide-react";
 import Link from "next/link";
 
@@ -28,8 +28,8 @@ export const NavbarRoutes = () => {
       <div className="flex gap-x-2 ml-auto">
         {isTeacherPage || isCoursePage ? (
           <Link href="/">
-            <Button size="sm" variant="ghost">
-              <LogOut className="h-4 w-4 mr-2" />
+            <Button size="sm" variant="destructive">
+              <LogOut className="h-4 w-4 mr-2 col" />
               Exit
             </Button>
           </Link>
